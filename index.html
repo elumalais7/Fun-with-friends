@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Allerlune Meme Maker</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>😂 Allerlune Meme Maker</h1>
+
+<p>Create memes in seconds!</p>
+
+</header>
+
+<div class="container">
+
+<div class="imageBox">
+
+<!-- Upload Placeholder -->
+
+<label for="uploadImage" class="uploadPlaceholder" id="uploadPlaceholder">
+
+<i class="fa-solid fa-image"></i>
+
+<h2>Upload an Image</h2>
+
+<p>Tap here to choose an image</p>
+
+</label>
+
+<!-- Hidden File Input -->
+
+<input
+type="file"
+id="uploadImage"
+accept="image/*"
+hidden>
+
+<!-- Uploaded Image -->
+
+<img
+id="previewImage"
+src=""
+alt="Preview">
+
+<!-- Caption -->
+
+<div class="caption" id="caption">
+
+Your Text Here
+
+</div>
+
+</div>
+
+<!-- Controls -->
+
+<div class="controls">
+
+<input
+type="text"
+id="captionInput"
+placeholder="Enter your meme caption...">
+
+<div class="buttons">
+
+<button id="funnyBtn">
+
+😂 Funny Memes
+
+</button>
+
+<button id="downloadBtn">
+
+<i class="fa-solid fa-download"></i>
+
+Download
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Meme Panel -->
+
+<div class="memePanel" id="memePanel">
+
+<h2>😂 Funny Meme Captions</h2>
+
+<div id="memeList">
+
+<!-- Filled by memes.js -->
+
+</div>
+
+</div>
+
+</div>
+
+<script src="memes.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
