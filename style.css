@@ -387,3 +387,21 @@ flex-direction:column;
 }
 
 }
+
+select{
+
+padding:15px;
+
+border:none;
+
+outline:none;
+
+border-radius:15px;
+
+font-size:17px;
+
+background:white;
+
+cursor:pointer;
+
+}
