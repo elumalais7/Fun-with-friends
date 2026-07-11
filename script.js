@@ -162,14 +162,34 @@ downloadBtn.addEventListener("click", function () {
 
         ctx.shadowBlur = 12;
 
-        wrapText(
-            ctx,
-            caption.innerHTML,
-            canvas.width / 2,
-            canvas.height / 2,
-            canvas.width - 100,
-            60
-        );
+        let y;
+
+if(textPosition.value==="top"){
+
+y=90;
+
+}
+
+else if(textPosition.value==="middle"){
+
+y=canvas.height/2;
+
+}
+
+else{
+
+y=canvas.height-90;
+
+}
+
+wrapText(
+ctx,
+caption.innerHTML,
+canvas.width/2,
+y,
+canvas.width-120,
+60
+);
 
         const link = document.createElement("a");
 
