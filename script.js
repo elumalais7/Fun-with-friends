@@ -231,3 +231,40 @@ function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
     }
 
 }
+const textPosition =
+document.getElementById("textPosition");
+
+textPosition.addEventListener("change", updatePosition);
+
+function updatePosition(){
+
+caption.style.top="";
+caption.style.bottom="";
+
+if(textPosition.value==="top"){
+
+caption.style.top="25px";
+
+}
+
+else if(textPosition.value==="middle"){
+
+caption.style.top="50%";
+
+caption.style.transform=
+"translate(-50%,-50%)";
+
+}
+
+else{
+
+caption.style.bottom="25px";
+
+caption.style.transform=
+"translateX(-50%)";
+
+}
+
+}
+
+updatePosition();
