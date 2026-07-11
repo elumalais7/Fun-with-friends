@@ -166,8 +166,8 @@ downloadBtn.addEventListener("click", function () {
             ctx,
             caption.innerHTML,
             canvas.width / 2,
-            canvas.height - 90,
-            canvas.width - 80,
+            canvas.height / 2,
+            canvas.width - 100,
             60
         );
 
